@@ -1,8 +1,15 @@
+
 import streamlit as st
 from sarvamai import SarvamAI
 import os
 import tempfile
+import mimetypes
 
+# Force the correct MIME type for Sarvam API
+mimetypes.add_type('audio/wav', '.wav')
+
+# -----------------------------------------------------------------------------
+# 1. API KEY SETUP & SECURE LOAD
 # -----------------------------------------------------------------------------
 # 1. API KEY SETUP & SECURE LOAD
 # -----------------------------------------------------------------------------
